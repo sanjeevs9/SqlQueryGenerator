@@ -23,7 +23,7 @@ export default function Sql() {
       setLoading(true);
       
       try {
-        const { data } = await axios.post<Schema>('http://13.60.35.70:3001/api/generate-database', {
+        const { data } = await axios.post<Schema>('http://sqlquery.sanjeevdev.in/api/generate-database', {
           description: inputText
         });
         console.log(data)
